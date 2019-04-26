@@ -5,15 +5,6 @@ var mapStateToProps = (state) => ({
   video: state.currentVideo
 });
 
-var mapDispatchToProps = (dispatch) => ({
-  handleVideoListEntryTitleClick: (video) => {
-    dispatch(changeVideo(video));
-  }
-});
-
-var VideoPlayerContainer = connect(mapStateToProps, mapDispatchToProps)(VideoPlayer);
-
-//TODO: define a VideoPlayerContainer component which will hook up your action
-//dispatchers with your VideoPlayer component props.
+var VideoPlayerContainer = connect(mapStateToProps, null)(VideoPlayer);
 
 export default VideoPlayerContainer;

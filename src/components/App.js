@@ -1,9 +1,9 @@
 import React from 'react';
-// import VideoList from './VideoList.js';
-// import VideoPlayer from './VideoPlayer.js';
-// import Search from './Search.js';
+import VideoListContainer from '../containers/VideoListContainer.js';
+import VideoPlayerContainer from '../containers/VideoPlayerContainer.js';
+import SearchContainer from '../containers/SearchContainer.js';
 
-export default App = () => (
+var App = () => (
 
   // getYouTubeVideos(query) {
   //   var options = {
@@ -37,3 +37,5 @@ export default App = () => (
       </div>
     </div>
 )
+
+export default App;
